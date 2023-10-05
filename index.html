@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="Монголын бүх үйлчилгээний газруудын талаар мэдээлэл">
     <title>Advice: Restaurants, Bars, Beauty Salons, Doctors, Autoservices</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -44,7 +43,13 @@
     
     <section class="review">
         <h2 class="section-title">Resent activities</h2>
-        <div class="review-content">
+        <div class="main-content">
+            <div class="review-box">
+                <img src="1.png" alt="" class="review-img">
+                <h2 class="company">The finest Indian restaurant Sofia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
+                <span class="rating">4.5</span>
+            </div>
             <div class="review-box">
                 <img src="1.png" alt="" class="review-img">
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
@@ -61,27 +66,26 @@
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
                 <span class="rating">4.5</span>
-            </div><div class="review-box">
+            </div>
+            <div class="review-box">
                 <img src="1.png" alt="" class="review-img">
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
                 <span class="rating">4.5</span>
-            </div><div class="review-box">
+            </div>
+            <div class="review-box">
                 <img src="1.png" alt="" class="review-img">
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
                 <span class="rating">4.5</span>
-            </div><div class="review-box">
+            </div>
+            <div class="review-box">
                 <img src="1.png" alt="" class="review-img">
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
                 <span class="rating">4.5</span>
-            </div><div class="review-box">
-                <img src="1.png" alt="" class="review-img">
-                <h2 class="company">The finest Indian restaurant Sofia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
-                <span class="rating">4.5</span>
-            </div><div class="review-box">
+            </div>
+            <div class="review-box">
                 <img src="1.png" alt="" class="review-img">
                 <h2 class="company">The finest Indian restaurant Sofia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quod, blanditiis ad tempora inventore nesciunt sit amet nobis nemo, exercitationem dolorum voluptatum quia earum! Nisi sint excepturi veritatis quidem quibusdam.</p>
@@ -91,34 +95,60 @@
         
     </section>
 
-    <script>
-        //javascript of responsive nav menu
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
+    <section class="catagory">
+        <h2 class="section-title">Catagories</h2>
+        <div class="main-content">
+            <div class="catagory-box">
+                <img class="icons" src="restaurant.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="hotel-bed.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="scissors.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="home.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="bag.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="beer.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="weight.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
+            <div class="catagory-box">
+                <img class="icons" src="more.png" alt="icon">
+                <h3 class="menu-icon">Restaurants</h3>
+            </div>
 
-        //Javascript for video slider navigation
-        const btns = document.querySelectorAll(".nav-btn");
+        </div>
 
-        var sliderNav = function(manual){
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
+    </section>
 
-
-            btns[manual].classList.add("active");
-
-        }
-
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i);
-            });
-        });
-    </script>
+    <footer>
+        <h1 id="logo">Advice</h1>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Бидний тухай</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
