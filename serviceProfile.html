@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service_profile</title> 
+    <style>
+        :root {
+            --button-color: #9EDDFF;
+
+        }
+        body{
+            margin: auto;
+        }
+        main{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+            
+        }
+        header{
+            width: 100%;
+            height: 8vh;
+        }
+        .servicePro {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+        }
+        .imageContainer{
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .image-container img {
+            width: 30%; 
+        }
+        .proContent{
+            position: absolute;
+            width: 40%;
+            height: 20vh;
+            top: 25vh;
+            left:20%;
+        }
+        .proContent{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: start;
+        }
+        .servicePro p {
+            color: blue;
+        }
+        .servicePro span {
+            color: #4BAE4F;
+            font-weight: bold;
+        }
+        .extraSelection{
+            display: flex;
+            align-items: flex-start;
+        }
+        .extraSelection li {
+            width: 200px;
+            height: 45px;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <section>
+            <article class="servicePro">
+                <div class="imageContainer">
+                    <img src="food1.png" alt="" class="proImage">
+                    <img src="food2.png" alt="" class="proImage">
+                    <img src="food3.png" alt="" class="proImage">
+                </div>
+                <div class="proContent">
+                    <div>
+                        <svg width="80px" height="80px">
+                            <circle cx="40px" cy="40px" r="20px" fill="white" />
+                            <image x="20px" y="20px" width="40px" height="40px" xlink:href="serLogo.png" />
+                        </svg> 
+                    </div>              
+                    <h1 style="color: #FFFFFF; font-size: 30px;">The Indian restaurant Kohinoor</h1>
+                    <p>
+                        <meter class="star1">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </meter> 4.1 (<span>385</span> reviews)
+                    </p>
+                    <p><span class="claimed">Claimed</span> Fast Food, Indian, Asian</p>
+                    <p><span class="openOrclosed">Open</span><time> 10:30 AM-12:00 PM</time><nav>See hours</nav></p>
+                </div>
+            </article>
+            <ul class="extraSelection">
+                <li>Write a review</li>
+                <li>Add photo</li>
+                <li>Share</li>
+                <li>Save</li>
+                <li>Website Menu</li>
+            </ul>
+            <hr size="0.5", color="000000", width="45%">
+        </section>
+        <section class="locAndHours">
+            <h2>Location and Hours</h2>
+            <article class="maps">
+                <img src="" alt="">
+                <p>Margad center 2nd floor opposite Geser monastery, ikh toiruu street 
+                    Chingeltei district 5th khoroo</p>
+            </article>
+            <article class="schedule">
+                <ul>
+                    <li>Mon<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Tue<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Wed<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Thu<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Fri<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Sat<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <li>Sun<time datetime="08:00-03:00"><p>11:00 AM - 3.30 PM</p></time></li>
+                    <div>
+                        <p></p>
+                    </div>
+                </ul>
+            </article>
+            <article class="contuct1">
+                <p><i></i></p>
+                <p><i></i></p>
+                <p><i></i></p>
+            </article>
+        </section>
+        <section class="youMightAlso">
+            <h2>You Might Also Consider</h2>
+            <article>
+                <h3></h3>
+                <hr>
+                <hr>
+                <hr>
+                <p>
+                    <span></span>
+                    <meter></meter>
+                    <p></p>
+                    <p></p>
+                </p>
+            </article>
+            <article>
+                <h3></h3>
+                <hr>
+                <hr>
+                <hr>
+                <p>
+                    <span></span>
+                    <meter></meter>
+                    <p></p>
+                    <p></p>
+                </p>
+            </article>
+            <article>
+                <h3></h3>
+                <hr>
+                <hr>
+                <hr>
+                <p>
+                    <span></span>
+                    <meter></meter>
+                    <p></p>
+                    <p></p>
+                </p>
+            </article>
+            <article>
+                <h3></h3>
+                <hr>
+                <hr>
+                <hr>
+                <p>
+                    <span></span>
+                    <meter></meter>
+                    <p></p>
+                    <p></p>
+                </p>
+            </article>
+        </section>
+        <section class="recommended">
+            <h2>Recommended Reviews</h2>
+            <article class="startYourReview">
+                <svg class="logo"></svg>
+                <p><b>Username</b>Location</p>
+                <meter>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </meter>
+                <p><b>Start your review of</b>The Indian restaurant</p>
+            </article>
+            <article class="overallRating">
+                <h5>Overall rating</h5>
+                <meter>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </meter>
+                <p></p>
+            </article>
+        </section>
+        <section>
+            <h2>People Also Viewed</h2>
+            <article></article>
+        </section>
+    </main>   
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
+
+
+<!-- meter tag-iig unelgeend
+ span tag-iig closed now, open until, 
+// on,sar,udur-g time tag-aar
+// css grid ashiglahdaa tuunii min, max zereg function-uudiig ashiglaval zgeer bas template-g ni
+// pixel ashiglah tohildold hussen huseegui media query bichdeg
+// flex-g default baidlaar, harin grid-g iluu specific nuhtsuld ashigladag.
+// Mun nest hiih, jishee &yyyy{.....} huvisagch ashiglah
+// .... is(na>ul) ene ni yg ehnii ul-g shuu gdgiig zaaj ugdug 
+vh, vw uzeh bolomjtoi delgetsiin undur, urgun
+rem html-n fontnii hemjeenees hamaarna, jishee ni html font-size: 10px , .c font-size: 2rem /20px/
+em uuriin parent-iinhaa hemjeenees hamaarna, jishee ni p>span, p font-size: 10px, span font-size: 2rem /20px/
+-->
